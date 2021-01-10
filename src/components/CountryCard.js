@@ -17,10 +17,12 @@ const CountryCard = (props) => {
 						className='d-block h-100'
 					/>
 				</div>
+
 				<div className='px-3'>
 					<span className='country-name text-dark d-block font-weight-bold'>
 						{name.common}
 					</span>
+
 					<span className='country-region text-secondary text-uppercase'>
 						{region}
 					</span>
@@ -30,7 +32,7 @@ const CountryCard = (props) => {
 	);
 };
 
-CountryCard.PropTypes = {
+CountryCard.propTypes = {
 	country: PropTypes.shape({
 		cca2: PropTypes.string.isRequired,
 		region: PropTypes.string.isRequired,
